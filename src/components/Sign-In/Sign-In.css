@@ -1,0 +1,15 @@
+.SignIn {
+  width: 25%;
+  height: 25%;
+  background: #ffffff8c;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SignIn button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
