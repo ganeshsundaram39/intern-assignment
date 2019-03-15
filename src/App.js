@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
-import SignIn from './components/Sign-In/Sign-In';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Main from './components/Main/Main';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <SignIn />
-      </div>
+      <Router>
+        <div className="App">
+          <Main />
+        </div>
+      </Router>
     );
   }
 }

@@ -19,9 +19,12 @@ export default class SignIn extends Component {
       .fields(
         'id,firstName,emailAddress,lastName,picture-urls::(original),public-profile-url,location:(name)'
       )
-      .result(function(me) {
-        var profile = me.values[0];
-        console.log(profile);
+      .result(me => {
+        const profile = me.values[0];
+        this.props.isAuthorized(true);
+        this.props.setUserInfo(profile);
+        this.props.history.push('/');
+        alert('Sign-in Successfull');
       });
   };
   render() {
