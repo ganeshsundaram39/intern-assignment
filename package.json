@@ -2,17 +2,21 @@
   "name": "intern-assignment",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://intern-assignment-linkedin.herokuapp.com/",
   "dependencies": {
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-linkedin-sdk": "^1.0.12",
-    "react-scripts": "2.1.8"
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.8",
+    "serve": "^10.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
